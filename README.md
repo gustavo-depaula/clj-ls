@@ -1,44 +1,30 @@
 # clj-ls
+a minimal ls command implementation in clojure - for learning purposes  
+what did i learn doing this:
+- requiring packages and using namespaces
+- accessing java classes through clojure/java interop
+- fuction and control flow in clojure
+- using `main` function arguments
+- clojure funky arrows (->, ->>)
 
-FIXME: description
+## installation
+just use leiningen:
+``` sh
+lein install
+```
 
-## Installation
+## about
+although it work with the most basic uses of `ls`, i took some artistic licenses
+to make this implementation:
+- directories come first and are highlighted
+- no support for any `ls` flag
+- dotfiles are not hidden
 
-Download from http://example.com/FIXME.
+# usage
+just use leiningen: `lein run [paths ...]`
+``` sh
+lein run # will list the current directory content
+lein run ~/ # will list home's content
+lein run ~/ src # will list both home and src contents
+```
 
-## Usage
-
-FIXME: explanation
-
-    $ java -jar clj-ls-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2019 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.

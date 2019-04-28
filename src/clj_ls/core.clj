@@ -1,5 +1,4 @@
 (ns clj-ls.core
-  (:use clojure.pprint)
   (:require [clojure.java.io :as io]
             [io.aviso.ansi :as ansi]
             [clojure.tools.cli :refer [parse-opts]])

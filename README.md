@@ -28,3 +28,5 @@ lein run ~/ # will list home's content
 lein run ~/ src # will list both home and src contents
 ```
 
+# how does it look
+<img src="./cljls-v-ls.png">

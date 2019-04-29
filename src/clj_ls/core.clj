@@ -8,11 +8,11 @@
   "generate a list of pairs of ansi colors and file names"
   [& {:keys [path] :or {path "."}}]
   (->> (.listFiles (io/file path))
-                      (sort-by (fn [f] (.getName f)))
-                      (sort-by (fn [f] (.isFile f)))
-                      (map (fn [x]
-                             ((if (.isDirectory x) ansi/bold-cyan ansi/white)
-                              (.getName x))))))
+       (sort-by (fn [f] (.getName f)))
+       (sort-by (fn [f] (.isFile f)))
+       (map (fn [x]
+              ((if (.isDirectory x) ansi/bold-cyan ansi/white)
+               (.getName x))))))
 
 (defn printFileNames!
   "print a list of file names"
